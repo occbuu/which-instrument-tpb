@@ -1,13 +1,21 @@
-# Which instrument, for which construct? (Paper 1B) — replication package
+# Which instrument, for which construct? — replication package
 
 Replication materials for:
 
-> *Which Instrument, for Which Construct? Human-anchored adjudication of three text-derived measures of the same psychological constructs, on 706,921 documents.*
+> Le Ngoc, H. (2026). *Which instrument, for which construct? Human-anchored adjudication of three text-derived measures of the same psychological constructs, on 706,921 documents.* Working paper.
 
-This repository covers **Paper 1B only** (dictionary vs encoder vs NLI vs a zero-shot generative LLM, against a 10-coder gold standard). The sealed-window intention → behaviour test is Paper 1A:
+This package compares a regular-expression dictionary, a DeBERTa encoder, an NLI entailment scorer, and a zero-shot generative LLM against a 10-coder gold standard.
 
-- Code/data: https://github.com/occbuu/sealed-window-tpb
-- Archive: https://doi.org/10.5281/zenodo.22274705
+## Cite this package
+
+If you use the gold frame, labels, or code, cite the working paper and this release:
+
+```
+Le Ngoc, H. (2026). Which-instrument TPB replication package (v1.0.0)
+[Computer software]. GitHub. https://github.com/occbuu/which-instrument-tpb
+```
+
+GitHub reads `CITATION.cff` for the “Cite this repository” button. Add the Zenodo DOI here after the first tagged release.
 
 ## What is in this package
 
@@ -20,10 +28,10 @@ This repository covers **Paper 1B only** (dictionary vs encoder vs NLI vs a zero
 | `tables/` | Manuscript CSV sources (reliability, agreement, adjudication, word-budget, LLM, protocol) |
 | `src/tpb_lexicon.py` | Published regular-expression dictionary |
 | `src/reproduce_tables.py` | Recomputes Table 3 and Table 7 from `gold_frame.csv` |
-| `src/llm_zeroshot.py` | Frozen Groq protocol (needs `GROQ_API_KEY` **and** `data/private_texts.csv`; texts are not in this repo) |
+| `src/llm_zeroshot.py` | Frozen Groq protocol (needs `GROQ_API_KEY` and `data/private_texts.csv`; texts are not in this repo) |
 | `codebook/appendix_A.md` | Annotation codebook |
 
-Raw Inside Airbnb reviews and the 599-document source texts are **not** distributed. Inside Airbnb files remain available at [insideairbnb.com/get-the-data](https://insideairbnb.com/get-the-data/) under CC BY 4.0.
+Raw Inside Airbnb reviews and the 599 source texts are **not** distributed. City files remain at [insideairbnb.com/get-the-data](https://insideairbnb.com/get-the-data/) under CC BY 4.0.
 
 ## Reproduce reported gold-standard tables
 
@@ -37,24 +45,24 @@ python src/reproduce_tables.py
 
 This recomputes Table 3 (AUC, precision, recall, F1 vs the human reference) and Table 7 (length-stratified SN–BI rank correlations) from `data/gold_frame.csv`. It does not re-download reviews or call an LLM.
 
-Table 4 in the manuscript is an **annotation-level** coder-bootstrap estimand (302 / 829 disagreement annotations). The CSV in `tables/table_gold_adjudication.csv` is the reported table. A simpler document-level disagreement share can be computed from `gold_frame.csv` but is not the same estimand.
+Table 4 in the manuscript is an **annotation-level** coder-bootstrap estimand (302 / 829 disagreement annotations). The file `tables/table_gold_adjudication.csv` is the reported table. A document-level disagreement share from `gold_frame.csv` is not the same estimand.
 
 ## Generative LLM protocol (already run)
 
 - Model: `qwen/qwen3.8-27b` on Groq, 10 September 2026, temperature 0
 - Prompt: Appendix A codebook only (no human labels, no dictionary/NLI scores)
-- 593 of 599 sampled documents labelled before the provider token cap; **all 532 gold-eligible documents are complete**
+- **599 of 599** sampled documents labelled; **532 of 532** gold-eligible documents complete
 - This gold sample is **not** a fresh hold-out
 - This is **not** GPT-4o
 
-To recode locally you need review text that this package deliberately omits, plus `GROQ_API_KEY`. Do not commit API keys.
+Published labels are in `data/llm_labels.csv`. Local recoding requires review text that this package omits, plus `GROQ_API_KEY`. Do not commit API keys.
 
 ## Mint a DOI (Zenodo)
 
-1. Push this folder to a **public** GitHub repository (do not upload review text or `.env` keys).
+1. Push this folder to the public GitHub repository (do not upload review text or `.env` keys).
 2. Sign in to [Zenodo](https://zenodo.org) with GitHub and enable the repository.
 3. Create a GitHub Release (e.g. `v1.0.0`).
-4. Paste the Zenodo DOI into the manuscript data-availability statement.
+4. Paste the Zenodo DOI into `CITATION.cff` and the manuscript data-availability statement.
 
 ## Licence
 
@@ -67,4 +75,8 @@ To recode locally you need review text that this package deliberately omits, plu
 - Reliability (shared 100 documents, 10 coders): BI α = 0.873; SN α = 0.736; PBC 0.438; SAT 0.267; ATT 0.147.
 - Table 3, revisit intention: dictionary AUC 0.747 / NLI 0.951 / LLM 0.940.
 - Table 3, subjective norm: dictionary AUC 0.828 / NLI 0.813 / LLM 0.911; NLI prevalence 0.808 vs human 0.265 vs LLM 0.393.
-- Human SN–BI association stays negative at every length band (Table 7); it does not show the dictionary's length attenuation.
+- Human SN–BI association stays negative at every length band (Table 7).
+
+## Contact
+
+Hieu Le Ngoc ([ORCID 0000-0002-1133-1433](https://orcid.org/0000-0002-1133-1433)), Posts and Telecommunications Institute of Technology, Ho Chi Minh City Campus. Email: lnhieu@ptit.edu.vn

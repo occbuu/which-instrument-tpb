@@ -1,4 +1,4 @@
-"""Frozen zero-shot protocol from Paper 1B (10 September 2026).
+"""Frozen zero-shot protocol (10 September 2026).
 
 Requires:
   GROQ_API_KEY in the environment

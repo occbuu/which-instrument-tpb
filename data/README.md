@@ -1,7 +1,7 @@
 # Gold-standard files (no review text)
 
 `doc_id` is `sha256("paper1b-which-instrument-2026|{original_review_id}")[:16]`.
-The mapping is not released, so these IDs cannot be joined to Inside Airbnb or to the Paper 1A analytic file.
+The mapping is not released, so these IDs cannot be joined to Inside Airbnb identifiers.
 
 | File | Unit | Notes |
 |---|---|---|

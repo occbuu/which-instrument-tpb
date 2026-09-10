@@ -1,4 +1,4 @@
-"""Recompute Paper 1B Tables 3 and 7 from the public gold frame (no raw text)."""
+"""Recompute Tables 3 and 7 from the public gold frame (no raw text)."""
 from pathlib import Path
 import numpy as np
 import pandas as pd

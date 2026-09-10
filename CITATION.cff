@@ -1,23 +1,37 @@
 cff-version: 1.2.0
-title: "Which-instrument TPB replication package (Paper 1B)"
-message: "If you use this code or gold-standard file, please cite the article and this release."
+title: "Which-instrument TPB replication package"
+message: "If you use this code or gold-standard file, please cite the working paper and this software release."
 type: software
 license: MIT
+version: "1.0.0"
+date-released: "2026-09-10"
+url: "https://github.com/occbuu/which-instrument-tpb"
 repository-code: "https://github.com/occbuu/which-instrument-tpb"
 abstract: >
-  Replication package for Paper 1B: human-anchored adjudication of dictionary,
-  encoder, NLI and zero-shot LLM measures of the same text constructs. Includes
-  analysis code, manuscript tables, de-identified error excerpts, and a
-  text-free gold frame (N = 532) with salted document IDs.
+  Replication package for a human-anchored adjudication of dictionary,
+  encoder, NLI and zero-shot LLM measures of the same text constructs.
+  Includes analysis code, manuscript tables, de-identified error excerpts,
+  and a text-free gold frame (N = 532) with salted document IDs.
 keywords:
   - construct validity
   - dictionary methods
   - zero-shot classification
   - inter-coder reliability
+  - large language models
   - online reviews
+  - theory of planned behaviour
 authors:
   - family-names: "Le Ngoc"
     given-names: "Hieu"
     email: lnhieu@ptit.edu.vn
     orcid: "https://orcid.org/0000-0002-1133-1433"
     affiliation: "Faculty of Information Technology 2, Posts and Telecommunications Institute of Technology, Ho Chi Minh City Campus, Ho Chi Minh City, Vietnam"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Le Ngoc"
+      given-names: "Hieu"
+      orcid: "https://orcid.org/0000-0002-1133-1433"
+  title: "Which instrument, for which construct? Human-anchored adjudication of three text-derived measures of the same psychological constructs, on 706,921 documents"
+  year: 2026
+  notes: "Working paper. Replication package: https://github.com/occbuu/which-instrument-tpb"

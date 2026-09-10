@@ -1,13 +1,12 @@
-Paper 1B generative LLM protocol
+Generative LLM protocol
 Date: 2026-09-10
 Provider: Groq
 Model: qwen/qwen3.8-27b
 Temperature: 0
-Prompt: Appendix A codebook (src/p1_step16_llm_gold.py SYSTEM)
+Prompt: Appendix A codebook only
 No human labels or instrument scores in the prompt
-Documents submitted: 593 / 599 (provider daily token cap)
+Documents submitted: 599 / 599
 Gold-eligible complete: 532 / 532
 Presence threshold: score >= 0.5
-Metrics: outputs/tables/table_gold_llm_agreement.csv
-Labels: work/llm_qwen38_groq.jsonl
+Published labels: data/llm_labels.csv
 Not GPT-4o; not Llama-3.3-70B (unavailable on this Groq account)

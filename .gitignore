@@ -9,3 +9,5 @@ outputs/
 *.docx
 ~$*
 data/private_texts.csv
+tables/table3_recomputed.csv
+tables/table7_recomputed.csv
