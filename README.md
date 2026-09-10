@@ -12,10 +12,10 @@ If you use the gold frame, labels, or code, cite the working paper and this rele
 
 ```
 Le Ngoc, H. (2026). Which-instrument TPB replication package (v1.0.0)
-[Computer software]. GitHub. https://github.com/occbuu/which-instrument-tpb
+[Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22693743
 ```
 
-GitHub reads `CITATION.cff` for the “Cite this repository” button. Add the Zenodo DOI here after the first tagged release.
+GitHub reads `CITATION.cff` for the “Cite this repository” button. Code: https://github.com/occbuu/which-instrument-tpb.
 
 ## What is in this package
 
@@ -57,12 +57,9 @@ Table 4 in the manuscript is an **annotation-level** coder-bootstrap estimand (3
 
 Published labels are in `data/llm_labels.csv`. Local recoding requires review text that this package omits, plus `GROQ_API_KEY`. Do not commit API keys.
 
-## Mint a DOI (Zenodo)
+## Archive
 
-1. Push this folder to the public GitHub repository (do not upload review text or `.env` keys).
-2. Sign in to [Zenodo](https://zenodo.org) with GitHub and enable the repository.
-3. Create a GitHub Release (e.g. `v1.0.0`).
-4. Paste the Zenodo DOI into `CITATION.cff` and the manuscript data-availability statement.
+This release (v1.0.0) is archived at [doi:10.5281/zenodo.22693743](https://doi.org/10.5281/zenodo.22693743).
 
 ## Licence
 

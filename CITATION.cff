@@ -7,6 +7,10 @@ version: "1.0.0"
 date-released: "2026-09-10"
 url: "https://github.com/occbuu/which-instrument-tpb"
 repository-code: "https://github.com/occbuu/which-instrument-tpb"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22693743"
+    description: "Zenodo archive of this replication package"
 abstract: >
   Replication package for a human-anchored adjudication of dictionary,
   encoder, NLI and zero-shot LLM measures of the same text constructs.
@@ -34,4 +38,4 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0002-1133-1433"
   title: "Which instrument, for which construct? Human-anchored adjudication of three text-derived measures of the same psychological constructs, on 706,921 documents"
   year: 2026
-  notes: "Working paper. Replication package: https://github.com/occbuu/which-instrument-tpb"
+  notes: "Working paper. Replication package: https://doi.org/10.5281/zenodo.22693743"
