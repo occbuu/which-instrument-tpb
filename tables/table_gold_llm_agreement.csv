@@ -1,0 +1,6 @@
+construct,instrument,n,human_prevalence,instrument_prevalence,auc_vs_gold,precision,recall,f1
+ATT,llm_qwen3.8-27b,532,0.985,1.0,0.816,0.985,1.0,0.992
+SN,llm_qwen3.8-27b,532,0.265,0.393,0.911,0.612,0.908,0.731
+PBC,llm_qwen3.8-27b,532,0.586,0.643,0.833,0.816,0.894,0.853
+SAT,llm_qwen3.8-27b,532,0.25,0.961,0.556,0.26,1.0,0.413
+BI,llm_qwen3.8-27b,532,0.335,0.376,0.94,0.84,0.944,0.889

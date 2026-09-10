@@ -1,0 +1,3 @@
+construct,n_disagreement_annotations,n_coders,human_with_dictionary,ci_low,ci_high,human_with_entailment,coders_favouring_dictionary,leave_one_out_range
+Revisit intention,302,10,0.295,0.231,0.398,0.705,1/10,0.248-0.305
+Subjective norm,829,10,0.848,0.819,0.879,0.152,10/10,0.838-0.856

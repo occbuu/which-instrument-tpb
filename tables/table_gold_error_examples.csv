@@ -1,0 +1,6 @@
+pattern,construct,n_coders,band,disagree_code,snippet,dictionary_hits,dictionary_presence,nli_score,nli_presence,human_votes_present,human_votes_n,human_majority
+Missed BI paraphrase,BI,10,40-70,3,"...in general a very good stay, that we will definitely use again.",0,0,0.959,1,9,10,1
+Missed BI paraphrase,BI,10,15-40,4,Would rent this place again!,0,0,0.858,1,9,10,1
+Missed BI paraphrase,BI,10,70-120,3,We will definitely be staying at [Host]'s place again.,0,0,0.997,1,9,10,1
+NLI SN halo,SN,10,40-70,3,"[Host]'s rooms are a great asset for travelers. The room is comfortable and clean, and have an ideal location.",0,0,0.948,1,1,10,0
+NLI SN halo,SN,10,40-70,3,"I had a neat, clean room that's just the right size for 1-2 people... The hosts provide clear help and instructions and are quick to respond.",0,0,0.958,1,0,10,0
